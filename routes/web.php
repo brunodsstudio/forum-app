@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/viewProfile', [ProfileController::class, 'index']
+)->middleware(['auth'])->name('Profile');
+
+Route::post('/viewProfile', [ProfileController::class, 'index']
+)->middleware(['auth'])->name('Profile');
+
+Route::get('/viewPosts', [PostsController::class, 'index']
+)->middleware(['auth'])->name('Posts');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';

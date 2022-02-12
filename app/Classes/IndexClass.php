@@ -7,6 +7,14 @@ class IndexClass {
     public $_aJs = array();
     public $_aCss = array();
 
+    public function preit($array, $die = false){
+        echo "<pre>";
+        print_r($array);
+        echo "</pre>";
+        if($die)die();
+
+    }
+
     public function loadJs($aJs, $fullPath = null) {
 
         if (is_array($aJs)) {

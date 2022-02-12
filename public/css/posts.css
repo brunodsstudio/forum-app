@@ -40,7 +40,7 @@ body{margin-top:20px;}
 .post-content .post-container .post-detail .reaction{
   position: absolute;
   right: 0;
-  top: 0;
+  top: 70px;
 }
 
 .post-content .post-container .post-detail .post-comment{
@@ -165,4 +165,14 @@ img.profile-photo-sm {
   background-color: #f6f7f8;
   border-top-color: #e9eaed;
 }   
+/*/////////////////////////////////////*/
+.fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
 

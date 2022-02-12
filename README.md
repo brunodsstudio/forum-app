@@ -20,6 +20,8 @@ http://localhost:8000/viewProfile
 http://localhost:8000/viewPosts
 http://localhost:8000/allPostsTable
 
+## donwload de todo o projeto zipado (com pasta vendor e dump do banco)
+<a href="https://drive.google.com/file/d/1zgVpL2d0A8ZwGvlDO-XIda7XC9L6hzlo/view?usp=sharing" >Arquivos mais dump do banco</a>
 
 ## config
 configurações de email ultilizadas
